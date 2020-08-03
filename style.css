@@ -160,8 +160,10 @@ p {
 }
 
 .showcase-content .btn-show:hover {
-  background: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  opacity: 0.8;
+  background: #1b242f;
+  border: 2px solid #1b242f;
+  border-radius: 8px;
 }
 
 .showcase-content .btn-show i {
