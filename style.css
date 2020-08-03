@@ -16,6 +16,9 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+}
 .container {
   padding: 20px;
 }
@@ -39,6 +42,25 @@ a {
   background: var(--primary-color);
   display: block;
   margin: 0 auto 1rem auto;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.75s ease both;
+}
+
+.slide-in-left.delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* nav bar */
@@ -148,4 +170,28 @@ a {
 
 .showcase * {
   z-index: 10;
+}
+
+/* about */
+.about-container .special {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.special .special-group {
+  padding: 10px;
+  text-align: center;
+}
+
+.special-group i {
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.special-group h3 {
+  margin: 10px 0;
 }
