@@ -33,6 +33,14 @@ a {
   text-transform: uppercase;
 }
 
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
 /* nav bar */
 .nav {
   width: 100%;
