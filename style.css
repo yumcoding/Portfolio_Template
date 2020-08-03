@@ -25,16 +25,16 @@ a {
   width: 100%;
   background: #1b242f;
   color: #fff;
-  /* display:flex; */
-  display: none;
+  display: flex;
+
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
 }
-.nav.show {
-  display: flex;
+.nav.top {
+  display: none;
 }
 
 .nav-container {
