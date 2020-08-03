@@ -27,6 +27,11 @@ a {
   justify-content: center;
 }
 
+.section-title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 /* nav bar */
 .nav {
   width: 100%;
