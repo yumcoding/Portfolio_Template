@@ -43,7 +43,6 @@ p {
   display: block;
   margin: 0 auto 1rem auto;
 }
-
 /* slide-in */
 .slide-in-left {
   animation: slideInLeft 0.75s ease both;
@@ -79,6 +78,34 @@ p {
     opacity: 1;
   }
 }
+
+/* flip */
+.flipX {
+  animation: flipX 0.75s ease both;
+}
+/* 
+@keyframes flipX {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: perspective(400px) rotateY(-20deg);
+  }
+  60% {
+    opacity: 1;
+    transform: perspective(400px) rotateY(10deg);
+  }
+  80% {
+    transform: perspective(400px) rotateY(5deg);
+  }
+  100% {
+    transform: perspective(400px);
+  }
+} */
 
 /* nav bar */
 .nav {
