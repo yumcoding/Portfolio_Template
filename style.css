@@ -221,6 +221,11 @@ p {
 
 /* about */
 
+.about {
+  margin: 20px 0;
+  padding: 30px 0;
+}
+
 .about-container .special {
   margin: 30px;
   display: grid;
@@ -247,7 +252,7 @@ p {
 /* skills */
 
 .skills {
-  margin: 20px 0;
+  margin: 30px 0 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
@@ -255,7 +260,12 @@ p {
 
 .skills > div:first-of-type {
   text-align: center;
-  padding: 20px;
+  padding: 20px 30px;
+}
+
+.skills > div:first-of-type h3 {
+  font-size: 25px;
+  margin: 5px 0;
 }
 
 .skills img {
