@@ -1,11 +1,12 @@
 :root {
   --primary-color: #318fb5;
+  --secondary-color: #005086;
+  --dark-color: #616161;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
-  border: 0;
+  padding: 0;
 }
 
 body {
@@ -219,6 +220,7 @@ p {
 }
 
 /* about */
+
 .about-container .special {
   margin: 30px;
   display: grid;
@@ -240,4 +242,56 @@ p {
 
 .special-group h3 {
   margin: 10px 0;
+}
+
+/* skills */
+
+.skills {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.skills > div:first-of-type {
+  text-align: center;
+  padding: 20px;
+}
+
+.skills img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.bar {
+  overflow: hidden;
+  height: 30px;
+  background: #eee;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bar .bar-fill {
+  background: var(--secondary-color);
+  height: 100%;
+}
+
+.bar .bar-fill .bar-tag {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100%;
+  width: 110px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bar span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: var(--dark-color);
 }
