@@ -484,3 +484,41 @@ h4 {
 .blog-info p {
   margin: 10px 0;
 }
+
+/* contact */
+.contact {
+  background-color: #252934;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.contact form {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-group .form-input {
+  width: 500px;
+  padding: 10px;
+  background-color: #1b242f;
+  color: #fff;
+  border: 0;
+}
+
+.form-input:focus {
+  outline: 0;
+}
+
+.btn-submit {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 7px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  float: right;
+}
