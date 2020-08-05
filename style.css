@@ -53,6 +53,15 @@ h4 {
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+.bottom-line-left {
+  height: 2px;
+  width: 3rem;
+  margin: 20px 0;
+  background: var(--primary-color);
+  display: block;
+}
+
 /* slide-in */
 .slide-in-left {
   animation: slideInLeft 0.75s ease both;
@@ -439,4 +448,39 @@ h4 {
 
 .project-text button:focus {
   outline: none;
+}
+
+/* blog */
+
+.blog {
+  padding: 30px 10px;
+  cursor: pointer;
+}
+
+.blog-content {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-image img {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-info {
+  margin: 20px 0;
+}
+
+.blog-info .blog-title {
+  margin: 10px 0 3px;
+}
+
+.blog-info small {
+  color: var(--dark-color);
+}
+
+.blog-info p {
+  margin: 10px 0;
 }
