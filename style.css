@@ -522,3 +522,33 @@ h4 {
   margin-top: 10px;
   float: right;
 }
+
+/* footer */
+.footer {
+  background-color: #1b242f;
+  color: var(--dark-color);
+}
+
+.footer .social {
+  margin: 25px 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer .social li {
+  background: #262f38;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .social li:hover {
+  background: var(--primary-color);
+  transform: scale(0.8);
+}
+
+.footer .social a {
+  color: #fff;
+}
