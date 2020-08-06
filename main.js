@@ -2,26 +2,25 @@ const nav = document.getElementById("nav");
 const navLinks = document.querySelectorAll(".nav-container ul li a");
 const sections = document.querySelectorAll("section");
 
+//change nav bar text color
+function changeNavColor(sectionID, color) {
+  navLinks.forEach((link) => {
+    if (link.hash === `#${sectionID}`) {
+      link.style.color = color;
+    }
+  });
+}
+
 // find which section is in viewport
-function findSection(e) {
+function findSection() {
   sections.forEach((section) => {
     if (
       window.scrollY >= section.offsetTop - 100 &&
       window.scrollY <= section.scrollHeight + section.offsetTop
     ) {
-      const sectionID = section.id;
-      navLinks.forEach((link) => {
-        if (link.hash === `#${sectionID}`) {
-          link.style.color = "#318fb5";
-        }
-      });
+      changeNavColor(section.id, "#318fb5");
     } else {
-      const sectionID = section.id;
-      navLinks.forEach((link) => {
-        if (link.hash === `#${sectionID}`) {
-          link.style.color = "#fff";
-        }
-      });
+      changeNavColor(section.id, "#fff");
     }
   });
 }
