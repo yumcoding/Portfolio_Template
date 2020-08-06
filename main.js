@@ -1,6 +1,30 @@
 const nav = document.getElementById("nav");
 const navLinks = document.querySelectorAll(".nav-container ul li a");
+const sections = document.querySelectorAll("section");
 
+// navbar text color change
+function navColorChange(e) {
+  sections.forEach((section) => {
+    if (
+      window.scrollY >= section.offsetTop - 100 &&
+      window.scrollY <= section.scrollHeight + section.offsetTop
+    ) {
+      const sectionID = section.id;
+      navLinks.forEach((link) => {
+        if (link.hash === `#${sectionID}`) {
+          link.style.color = "#318fb5";
+        }
+      });
+    } else {
+      const sectionID = section.id;
+      navLinks.forEach((link) => {
+        if (link.hash === `#${sectionID}`) {
+          link.style.color = "#fff";
+        }
+      });
+    }
+  });
+}
 //smooth scrolling
 for (const link of navLinks) {
   link.addEventListener("click", clickHandler);
@@ -30,3 +54,4 @@ function scrollFunction() {
 }
 
 window.addEventListener("scroll", scrollFunction);
+window.addEventListener("scroll", navColorChange);
