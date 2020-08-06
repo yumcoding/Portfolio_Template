@@ -1,6 +1,7 @@
 const nav = document.getElementById("nav");
 const navLinks = document.querySelectorAll(".nav-container ul li a");
 const sections = document.querySelectorAll("section");
+const showBtn = document.querySelector(".btn-show");
 
 //change nav bar text color
 function changeNavColor(sectionID, color) {
@@ -15,7 +16,7 @@ function changeNavColor(sectionID, color) {
 function findSection() {
   sections.forEach((section) => {
     if (
-      window.scrollY >= section.offsetTop - 100 &&
+      window.scrollY >= section.offsetTop &&
       window.scrollY <= section.scrollHeight + section.offsetTop
     ) {
       changeNavColor(section.id, "#318fb5");
@@ -55,3 +56,4 @@ function clickHandler(e) {
 
 window.addEventListener("scroll", showNavOnScroll);
 window.addEventListener("scroll", findSection);
+showBtn.addEventListener("click", clickHandler);
