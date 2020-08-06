@@ -1,4 +1,21 @@
 const nav = document.getElementById("nav");
+const navLinks = document.querySelectorAll(".nav-container ul li a");
+
+//smooth scrolling
+for (const link of navLinks) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}
 
 // show nav on scroll
 function scrollFunction() {
