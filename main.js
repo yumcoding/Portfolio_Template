@@ -2,8 +2,8 @@ const nav = document.getElementById("nav");
 const navLinks = document.querySelectorAll(".nav-container ul li a");
 const sections = document.querySelectorAll("section");
 
-// navbar text color change
-function navColorChange(e) {
+// find which section is in viewport
+function findSection(e) {
   sections.forEach((section) => {
     if (
       window.scrollY >= section.offsetTop - 100 &&
@@ -55,4 +55,4 @@ function showNavOnScroll() {
 }
 
 window.addEventListener("scroll", showNavOnScroll);
-window.addEventListener("scroll", navColorChange);
+window.addEventListener("scroll", findSection);
