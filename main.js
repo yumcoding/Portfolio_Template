@@ -25,6 +25,18 @@ function findSection() {
   });
 }
 
+// show nav on scroll
+function showNavOnScroll() {
+  if (
+    document.body.scrollTop > 580 ||
+    document.documentElement.scrollTop > 580
+  ) {
+    nav.style.top = "0";
+  } else {
+    nav.style.top = "-75px";
+  }
+}
+
 //smooth scrolling
 for (const link of navLinks) {
   link.addEventListener("click", clickHandler);
@@ -39,18 +51,6 @@ function clickHandler(e) {
     top: offsetTop,
     behavior: "smooth",
   });
-}
-
-// show nav on scroll
-function showNavOnScroll() {
-  if (
-    document.body.scrollTop > 580 ||
-    document.documentElement.scrollTop > 580
-  ) {
-    nav.style.top = "0";
-  } else {
-    nav.style.top = "-75px";
-  }
 }
 
 window.addEventListener("scroll", showNavOnScroll);
