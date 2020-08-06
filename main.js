@@ -25,6 +25,7 @@ function navColorChange(e) {
     }
   });
 }
+
 //smooth scrolling
 for (const link of navLinks) {
   link.addEventListener("click", clickHandler);
@@ -42,7 +43,7 @@ function clickHandler(e) {
 }
 
 // show nav on scroll
-function scrollFunction() {
+function showNavOnScroll() {
   if (
     document.body.scrollTop > 580 ||
     document.documentElement.scrollTop > 580
@@ -53,5 +54,5 @@ function scrollFunction() {
   }
 }
 
-window.addEventListener("scroll", scrollFunction);
+window.addEventListener("scroll", showNavOnScroll);
 window.addEventListener("scroll", navColorChange);
