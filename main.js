@@ -1,5 +1,6 @@
 const nav = document.getElementById("nav");
 
+// show nav on scroll
 window.onscroll = function () {
   scrollFunction();
 };
