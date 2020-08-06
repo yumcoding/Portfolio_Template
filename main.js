@@ -1,10 +1,6 @@
 const nav = document.getElementById("nav");
 
 // show nav on scroll
-window.onscroll = function () {
-  scrollFunction();
-};
-
 function scrollFunction() {
   if (
     document.body.scrollTop > 580 ||
@@ -15,3 +11,5 @@ function scrollFunction() {
     nav.style.top = "-75px";
   }
 }
+
+window.addEventListener("scroll", scrollFunction);
