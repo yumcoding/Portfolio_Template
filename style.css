@@ -499,7 +499,7 @@ h4 {
 .project-text button {
   cursor: pointer;
   padding: 7px 10px;
-  margin: 30px 0 10px;
+  margin: 50px 0 5px;
   font-size: 18px;
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
