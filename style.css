@@ -84,6 +84,21 @@ h4 {
   }
 }
 
+.slide-in-right {
+  animation: slideInRight 0.75s ease both;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(+1300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* fade-in */
 .fade-in {
   animation: fadeIn 1s ease both;
