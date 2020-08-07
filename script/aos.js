@@ -4,6 +4,7 @@ const sectionTitle = document.querySelectorAll(".section-title");
 const bottomLine = document.querySelectorAll(".bottom-line");
 const sectionDes = document.querySelectorAll(".section-description");
 const specialIcon = document.querySelectorAll(".special-icon");
+const specialContent = document.querySelectorAll(".special-content");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -35,6 +36,11 @@ function run() {
   specialIcon.forEach((item) => {
     if (isInViewport(item)) {
       item.classList.add("flipX");
+    }
+  });
+  specialContent.forEach((item) => {
+    if (isInViewport(item)) {
+      item.classList.add("fade-in");
     }
   });
 }
