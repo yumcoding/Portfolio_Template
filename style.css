@@ -87,7 +87,7 @@ h4 {
 /* fade-in */
 .fade-in {
   animation: fadeIn 1s ease both;
-  animation-delay: 0.5s;
+  animation-delay: 0.75s;
 }
 
 @keyframes fadeIn {
