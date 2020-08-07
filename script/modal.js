@@ -85,17 +85,19 @@ function showModal(e) {
           <div class="modal-image">
               <img src=${project.url} alt="${project.id}" />
           </div>
+      
           <div class="modal-text">
               <h1>${project.title}</h1>
               <h3>${project.tag}</h3>
-            
+     
               <p>
                   ${project.detail}
               </p>
+              <button>View Site <i class="fas fa-external-link-alt"></i></button>
           </div>
           <div class="close" id="close">
-          <i class="fa fa-times"></i>
-      </div>
+             <i class="fa fa-times"></i>
+           </div>
       </div>
     `;
   modalContainer.style.display = "block";
