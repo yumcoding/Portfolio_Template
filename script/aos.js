@@ -5,7 +5,8 @@ const bottomLine = document.querySelectorAll(".bottom-line");
 const sectionDes = document.querySelectorAll(".section-description");
 const specialIcon = document.querySelectorAll(".special-icon");
 const specialContent = document.querySelectorAll(".special-content");
-
+const skillsLeft = document.querySelector(".skills-left");
+const skillsRight = document.querySelector(".skills-right");
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
   return (
@@ -43,6 +44,13 @@ function run() {
       item.classList.add("fade-in");
     }
   });
+
+  if (isInViewport(skillsLeft)) {
+    skillsLeft.classList.add("slide-in-left");
+  }
+  if (isInViewport(skillsRight)) {
+    skillsRight.classList.add("slide-in-right");
+  }
 }
 
 // Events
