@@ -103,3 +103,15 @@ function showModal(e) {
 for (const project of projectsBtn) {
   project.addEventListener("click", showModal);
 }
+
+// close modal container
+modalContainer.addEventListener("click", (e) => {
+  if (e.target.parentElement.classList.contains("close")) {
+    modalContainer.style.display = "none";
+  }
+});
+window.addEventListener("click", (e) => {
+  e.target.classList.contains("modal-container")
+    ? (modalContainer.style.display = "none")
+    : false;
+});
