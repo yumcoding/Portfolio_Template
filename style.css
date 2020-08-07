@@ -139,7 +139,7 @@ h4 {
   position: fixed;
   top: -75px;
   left: 0;
-  z-index: 100;
+  z-index: 50;
   transition: top 0.75s ease;
 }
 
@@ -258,7 +258,7 @@ h4 {
 }
 
 .showcase * {
-  z-index: 10;
+  z-index: 5;
 }
 
 /* about */
@@ -574,4 +574,97 @@ h4 {
 
 .footer .social a {
   color: #fff;
+}
+
+/* modal */
+
+.modal-container {
+  display: none;
+  /* display: block; */
+  background: rgb(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.modal-content {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 500px;
+  max-width: 100%;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content .modal-image {
+  width: 500px;
+  height: 300px;
+}
+
+.modal-content .modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-content .modal-text {
+  padding: 20px;
+}
+
+.modal-content .modal-text h1 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.modal-content .modal-text h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+
+.modal-content .modal-text p {
+  margin: 15px 0;
+}
+
+.modal-content .modal-text button {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 7px 15px;
+  border-radius: 4px;
+  border: 1px solid var(--dark-color);
+}
+
+.modal-content .modal-text button:focus {
+  outline: none;
+}
+
+.modal-content .modal-text button:active {
+  animation: changeBtn 1s ease-in-out;
+}
+
+@keyframes changeBtn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal-content .close {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
