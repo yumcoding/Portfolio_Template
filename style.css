@@ -577,6 +577,11 @@ h4 {
   outline: 0;
 }
 
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .btn-submit {
   background: transparent;
   color: #fff;
