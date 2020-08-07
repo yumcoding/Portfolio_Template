@@ -75,3 +75,31 @@ const projectArr = [
 
 const modalContainer = document.getElementById("modal-container");
 const projectsBtn = document.querySelectorAll(".btn-project");
+
+function showModal(e) {
+  const projectID = e.target.getAttribute("id");
+  const project = projectArr.find((element) => element.id === projectID);
+
+  modalContainer.innerHTML = `
+      <div class="modal-content">
+          <div class="modal-image">
+              <img src=${project.url} alt="${project.id}" />
+          </div>
+          <div class="modal-text">
+              <h1>${project.title}</h1>
+              <h3>${project.tag}</h3>
+              <div class="close" id="close">
+                  <i class="fa fa-times"></i>
+              </div>
+              <p>
+                  ${project.detail}
+              </p>
+          </div>
+      </div>
+    `;
+  modalContainer.style.display = "block";
+}
+
+for (const project of projectsBtn) {
+  project.addEventListener("click", showModal);
+}
