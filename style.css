@@ -63,6 +63,18 @@ h4 {
   display: block;
 }
 
+/* set opacit:0 to animation-related elements  */
+.section-title,
+.bottom-line,
+.section-description,
+.section-description,
+.special-icon,
+.special-content,
+.skills-right,
+.skills-left {
+  opacity: 0;
+}
+
 /* slide-in */
 .slide-in-left {
   animation: slideInLeft 0.75s ease both;
