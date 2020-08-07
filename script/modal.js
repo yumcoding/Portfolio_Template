@@ -88,13 +88,14 @@ function showModal(e) {
           <div class="modal-text">
               <h1>${project.title}</h1>
               <h3>${project.tag}</h3>
-              <div class="close" id="close">
-                  <i class="fa fa-times"></i>
-              </div>
+            
               <p>
                   ${project.detail}
               </p>
           </div>
+          <div class="close" id="close">
+          <i class="fa fa-times"></i>
+      </div>
       </div>
     `;
   modalContainer.style.display = "block";
