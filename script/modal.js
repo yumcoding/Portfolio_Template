@@ -72,3 +72,6 @@ const projectArr = [
     url: "image/portfolio/item9.png",
   }),
 ];
+
+const modalContainer = document.getElementById("modal-container");
+const projectsBtn = document.querySelectorAll(".btn-project");
