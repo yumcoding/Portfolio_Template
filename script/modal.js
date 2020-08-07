@@ -93,7 +93,7 @@ function showModal(e) {
               <p>
                   ${project.detail}
               </p>
-              <button>View Site <i class="fas fa-external-link-alt"></i></button>
+              <button class="btn">View Site <i class="fas fa-external-link-alt"></i></button>
           </div>
           <div class="close" id="close">
              <i class="fa fa-times"></i>
