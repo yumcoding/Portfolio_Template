@@ -10,6 +10,7 @@
 }
 
 @media (max-width: 450px) {
+  /* Navbar */
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -49,6 +50,7 @@
     display: flex;
   }
 
+  /* Showcase */
   .showcase-content h1 {
     font-size: 1.6rem;
   }
@@ -64,6 +66,8 @@
   .section-description {
     text-align: center;
   }
+
+  /* About */
   .about-container .special {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -84,6 +88,7 @@
     font-size: 0.7rem;
   }
 
+  /* Portfolio */
   .projects,
   .blog-content {
     grid-template-columns: 1fr;
@@ -94,7 +99,18 @@
     width: 18rem;
     height: 16rem;
   }
+
+  /* Contact */
   .form-group .form-input {
     width: 15rem;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 20rem;
+  }
+
+  .modal-content .modal-image {
+    width: 20rem;
   }
 }
