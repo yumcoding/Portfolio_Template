@@ -37,7 +37,7 @@ function showNavOnScroll() {
   ) {
     nav.style.top = "0";
   } else {
-    nav.style.top = "-75px";
+    nav.style.top = "-300px";
   }
 }
 
