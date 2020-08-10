@@ -1,5 +1,5 @@
 const nav = document.getElementById("nav");
-const navLinks = document.querySelectorAll(".nav-container ul li a");
+const navLinks = document.querySelectorAll(".nav ul li a");
 const sections = document.querySelectorAll("section");
 const showBtn = document.querySelector(".btn-show");
 
@@ -55,12 +55,15 @@ function clickHandler(e) {
     top: offsetTop,
     behavior: "smooth",
   });
+  // hide menu
+  menu.classList.remove("active");
 }
 
 window.addEventListener("scroll", showNavOnScroll);
 window.addEventListener("scroll", findSection);
 showBtn.addEventListener("click", clickHandler);
 
+// toggle nav for small screen
 toggleBtn.addEventListener("click", (e) => {
   e.preventDefault();
   menu.classList.toggle("active");
