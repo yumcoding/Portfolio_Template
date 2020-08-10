@@ -662,19 +662,19 @@ textarea {
 }
 
 .modal-content .modal-text h3 {
-  margin-bottom: 10.31rem;
+  margin-bottom: 0.94rem;
   font-size: 1rem;
   color: var(--dark-gray);
 }
 
 .modal-content .modal-text p {
-  margin: 10.31rem 0;
+  margin: 0.94rem 0;
 }
 
 .modal-content .modal-text button {
   cursor: pointer;
   background-color: #fff;
-  padding: 0.44rem 10.31rem;
+  padding: 0.44rem 0.94rem;
   border-radius: 0.25rem;
   border: 0.0625rem solid var(--dark-color);
 }
