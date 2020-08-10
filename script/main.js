@@ -61,6 +61,7 @@ window.addEventListener("scroll", showNavOnScroll);
 window.addEventListener("scroll", findSection);
 showBtn.addEventListener("click", clickHandler);
 
-toggleBtn.addEventListener("click", () => {
+toggleBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   menu.classList.toggle("active");
 });
