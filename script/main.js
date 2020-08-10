@@ -3,6 +3,9 @@ const navLinks = document.querySelectorAll(".nav-container ul li a");
 const sections = document.querySelectorAll("section");
 const showBtn = document.querySelector(".btn-show");
 
+const toggleBtn = document.querySelector(".nav-toggleBtn");
+const menu = document.querySelector(".nav-menu");
+
 //change nav bar text color
 function changeNavColor(sectionID, color) {
   navLinks.forEach((link) => {
@@ -57,3 +60,7 @@ function clickHandler(e) {
 window.addEventListener("scroll", showNavOnScroll);
 window.addEventListener("scroll", findSection);
 showBtn.addEventListener("click", clickHandler);
+
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
