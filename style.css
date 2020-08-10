@@ -155,17 +155,19 @@ h4 {
 /* nav bar */
 .nav {
   width: 100%;
+  padding: 1.25rem;
   background: var(--dark-color);
   color: #fff;
   opacity: 0.9;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: -4.688rem;
   left: 0;
   z-index: 50;
   transition: top 0.75s ease;
+  display: relative;
 }
 
 .nav-container {
@@ -174,13 +176,13 @@ h4 {
   justify-content: space-between;
 }
 
-.nav-container i {
+.nav i {
   cursor: pointer;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
 
-.nav-container i:hover {
+.nav i:hover {
   color: var(--primary-color);
   animation: rotate 0.75s ease-in-out;
 }
@@ -197,23 +199,31 @@ h4 {
   }
 }
 
-.nav-container ul {
+.nav .nav-menu {
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-.nav-container li a {
+.nav-menu li a {
   color: #fff;
   padding: 0.6rem 0.94rem;
   transition: color 0.3s ease-in;
 }
 
-.nav-container li .current {
+.nav-menu li .current {
   color: var(--primary-color);
 }
-.nav-container li a:hover {
+.nav-menu li a:hover {
   color: var(--primary-color);
+}
+
+.nav-toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--accent-color);
 }
 
 /* showcase */
@@ -394,6 +404,7 @@ h4 {
 /* Portfolio */
 
 .portfolio {
+  width: 100%;
   padding: 0.6rem 0;
   background-color: var(--light-gray-bg);
 }
@@ -527,7 +538,8 @@ h4 {
 
 .blog-group {
   cursor: pointer;
-  width: 15rem;
+  width: 100%;
+  max-width: 15rem;
   margin: 0 0.6rem;
 }
 
