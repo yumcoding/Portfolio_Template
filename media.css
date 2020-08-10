@@ -87,8 +87,13 @@
   .projects,
   .blog-content {
     grid-template-columns: 1fr;
+    grid-gap: 0.75rem;
   }
 
+  .projet-image {
+    width: 18rem;
+    height: 16rem;
+  }
   .form-group .form-input {
     width: 15rem;
   }
