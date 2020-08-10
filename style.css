@@ -519,9 +519,10 @@ h4 {
 
 .blog-content {
   margin: 2rem 0;
-  padding: 1.25rem 0;
-  display: flex;
-  justify-content: space-around;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.6rem;
 }
 
 .blog-group {
