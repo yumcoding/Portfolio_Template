@@ -22,5 +22,14 @@
 <br/>
 <br/>
 <br/>
- 
+
+ ## 🖼 시연 영상
+<br/>
+• 데스크탑 시연 영상 <br/>
+
+ <a href="http://www.youtube.com/watch?feature=player_embedded&v=Hn4p64KCesM
+" target="_blank"><img src="http://img.youtube.com/vi/Hn4p64KCesM/0.jpg" 
+alt="on desktop" width="560" height="315" border="10" /></a> <br/>
+<br/>
+<br/>
  
